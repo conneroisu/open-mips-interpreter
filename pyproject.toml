@@ -25,10 +25,6 @@ classifiers = [
   "Programming Language :: Python"
 ]
 
-[tool.ariadne-codegen]
-schema_path = "schema.graphql"
-queries_path = "queries.graphql"
-
 [project.urls]
 Homepage = "https://open-mips-interpreter.com"
 Documentation = "https://readthedocs.org"
