@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "open-mips-interpreter"
+version = "2020.0.0"
+dependencies = [
+	"langchain",
+	"requests",
+]
+requires-python = ">=3.12"
+authors = [
+  {name = "Conner Ohnesorge", email = "conneroisu@outlook.com"},
+]
+maintainers = [
+  {name = "Conner Ohnesorge", email = "conneroisu@outlook.com"}
+]
+description = "A MIPS LLM interpreter written in Python."
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["egg", "bacon", "sausage", "tomatoes", "Lobster Thermidor"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[tool.ariadne-codegen]
+schema_path = "schema.graphql"
+queries_path = "queries.graphql"
+
+[project.urls]
+Homepage = "https://open-mips-interpreter.com"
+Documentation = "https://readthedocs.org"
+Repository = "https://github.com/conneroisu/open-mips-interpreter.git"
+"Bug Tracker" = "https://github.com/conneroisu/open-mips-interpreter/issues"
+Changelog = "https://github.com/conneroisu/open-mips-interpreter/blob/master/CHANGELOG.md"
+
+[project.scripts]
+spam-cli = "spam:main_cli"
+
+[project.gui-scripts]
+spam-gui = "spam:main_gui"
+
+[project.entry-points."mip_interpreter.main"]
+tomatoes = "spam:main_tomatoes"
