@@ -1,0 +1,8 @@
+pytest
+flask
+pytest
+hypothesis
+hypothesis[codemods]
+hypothesis[cli]
+mock-alchemy
+doppler-sdk
